@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <h1>Event Registration</h1>
+        <form action="temp.html" id="form" method="get">
+           
+
+            <p>Would you be attending the XYZ event ?</p>
+            <input type="radio" id="yes" name="attending">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="attending">
+            <label for="no">No</label><br>
+            <div class="error" id="radio_error"></div>
+            
+
+            <P>Name <span>*</span></P>
+            <input type="text" id="firstname" >
+            <input type="text" id="lastname" >
+            <label for="firstname" id="firstname">First</label>
+            <label for="lastname"id="lastname2" >Last</label><br>
+            <div  id="fname_error" class="error"></div>
+            <div  id="lname_error" class="error"></div><br>
+
+            <label id="e" for="mail">Email <span>*</span></label><br>
+            <input type="text" id="mail"><br>
+            <div class="error" id="mail_error"></div>
+
+            <label for="phone">Phone Number <span>*</span></label><br>
+            <input type="text" id="phone" >
+            <div class="error" id="phone_error"></div>
+
+            <br>
+
+            <label for="guests">How many guests are you bringing <span>*</span></label><br>
+            <input type="text" id="guests"><br>
+            <div class="error" id="guests_error"></div>
+
+            <label for="calender" >Choose the date of attending</label>
+            <br><input type="date" id="calender"><br>
+            <div id="calender_error" class="error"></div>
+
+            <label for="choose">Choose Cuisine</label><br>
+            <select id="choose">
+                <option id="a" selected>Selec the cuisine</option>
+                <option id="b" >option1</option>
+                <option id="c" >option2</option>
+                <option id="d" >option3</option>
+                <option id="e" >option4</option>
+            </select><br><br>
+            <div class="error" id="choose_error"></div>
+
+            <button type="submit" >Register</button>
+
+        </form>
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>
